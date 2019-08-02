@@ -2,12 +2,12 @@ import React from "react";
 import { View } from "react-native";
 import { Provider } from "react-redux";
 import { createStore } from "redux";
-import Reducers from "./reducers";
+import Reducer from "./reducers";
 import { Header } from "./components/common";
 
 const App = () => {
   return (
-    <Provider store={createStore(reducers)}>
+    <Provider store={createStore(Reducer)}>
       <View>
         <Header headerText="Tech Stack" />
       </View>
